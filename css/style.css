@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+
+.container {
+  width: 50%;
+  max-width: 68rem;
+  height: 42rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: .2px solid hsl(221, 100%, 96%);;
+  box-shadow: 0 3rem 3.2rem hsl(221, 100%, 96%);
+}
+
+
+.results {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+  padding: 1.6rem 5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.results__title h2{
+  font-size: 2.4rem;
+  color: hsl(241, 100%, 89%);
+}
+
+.results__score {
+  border-radius: 50%;
+  background-color: hsl(241, 81%, 54%);
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.results__score--total {
+  font-size: 5rem;
+  color: hsl(221, 100%, 96%);
+  font-weight: 700;
+}
+
+.results__score--of {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.4rem;
+}
+ 
+
+.results__word {
+  color: hsl(221, 100%, 96%);
+  font-size: 2.6rem;
+}
+
+.results__average {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+
+.summary {
+  padding: 3rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.summary__title {
+  color: hsl(224, 30%, 27%);
+  font-size: 2rem;
+}
+
+.summary__data {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: inherit;
+}
+
+.summary__data--reaction {
+  background-color: hsla(0, 100%, 67%, 0.109);
+  color: hsl(0, 100%, 67%);
+}
+.summary__data--memory {
+  background-color: hsla(39, 100%, 56%, 0.109);
+  color: hsl(39, 100%, 56%);
+}
+.summary__data--verbal {
+  background-color: hsl(166, 100%, 37%, 0.109);
+  color: hsl(166, 100%, 37%);
+}
+.summary__data--visual {
+  background-color: hsl(234, 85%, 45%, 0.109);
+  color: hsl(234, 85%, 45%);
+}
+
+
+.element {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.element__img {
+  display: flex;
+  gap: 1rem;
+}
+
+.element__porcent {
+  color: hsl(166, 100%, 37%);
+}
+
+.element__total {
+  color: hsl(224, 30%, 27%);
+}
+
+.summary__button {
+  align-self: stretch;
+  padding: 1.4rem;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+  cursor: pointer;
+}
+
+.summary__button:hover {
+  background-color: hsl(241, 81%, 54%)
+}
+
+.attribution {
+  font-size: 1.4rem;
+} 
+
+
+
