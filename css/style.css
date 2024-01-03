@@ -22,9 +22,8 @@ body {
 
 
 .container {
-  width: 50%;
-  max-width: 68rem;
-  height: 42rem;
+  width: 60rem;
+  /* height: 42rem; */
   background-color: hsl(0, 0%, 100%);
   border-radius: 25px;
   display: grid;
@@ -33,6 +32,9 @@ body {
   box-shadow: 0 3rem 3.2rem hsl(221, 100%, 96%);
 }
 
+
+
+/* /// RESULTS /// */
 
 .results {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -87,6 +89,10 @@ body {
   text-align: center;
 }
 
+
+
+
+/* /// SUMMARY /// */
 
 .summary {
   padding: 3rem 3.5rem;
@@ -172,4 +178,16 @@ body {
 } 
 
 
+/* /// MOBILE QUERIES /// */
+
+
+@media (max-width: 41.56em) {
+  .results {
+    gap: 2rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
 
